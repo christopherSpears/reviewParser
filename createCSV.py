@@ -2,10 +2,10 @@ import xml.etree.ElementTree as ET
 import csv
 import os
 
-tree = ET.parse('c:/Users/cspears/OneDrive - genesco.com/Documents - JYS_Ecommerce/VS Code/RevereParser/google-reviews.xml')
+tree = ET.parse('c:/PATH/TO/FILE/ON/COMPUTER.csv')
 root = tree.getroot()
 
-with open ('google-reviews.csv', 'w', newline='', encoding='utf-8') as csvfile:
+with open ('INSERT FILE HERE.csv', 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
 
     writer.writerow(["Review ID", "Page ID", "Review Display", "Review Title", "Review Date", "Review Location", "Review Text", "Rating", "Verified Buyer", "User Email", "Images"])
