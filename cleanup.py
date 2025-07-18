@@ -10,4 +10,4 @@ df['User Email'] = df['email']
 df = df.drop(['email', 'helper'], axis=1)
 
 # Save the modified DataFrame back to CSV
-df.to_csv('revere-reviews.csv', index=False)
+df.to_csv('reviews.csv', index=False)
